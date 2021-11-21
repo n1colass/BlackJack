@@ -1,0 +1,181 @@
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Righteous&display=swap');
+html{
+    height: 100%;
+}
+body{
+    height: 100%;
+    margin: 0;
+	overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #292F33;
+}
+.modal{
+    display: none;
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    overflow: hidden;
+    backdrop-filter: blur(5px);
+    justify-content: center;
+    align-items: center;
+}
+
+.modal_content{
+    width: 70%;
+    height: 50%;
+    background: #272e2e;
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+    align-items: center;
+}
+.modal_content p{
+    margin: 0 0 5% 0;
+}
+.result_game{
+    font: small-caps bold 10em sans-serif;
+    color: white;
+    text-transform: uppercase;
+    text-align: center;
+}
+.button_restart{
+    width: 70%;
+    height: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.button.restart_button{
+    padding: 2% 8%;
+}
+img{
+    width: auto;
+    height: 100%;
+}
+.game_area{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex: 1 0 100%;
+    max-width: 700px;
+    height: 70%;
+    overflow: hidden;
+    flex-wrap: wrap;
+}
+.middle_block{
+    width: 30%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.middle_block p {
+    width: 100%;
+    height: 30%;
+    color: white;
+    font-weight: 600;
+    font: small-caps bold 1.1em sans-serif;
+    letter-spacing: 1pt;
+    text-align: center;
+}
+.button_container{
+    width: 100%;
+    height: 70%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.button{
+    padding: 4% 12%;
+    font-size: 1em;
+    font-weight: 600;
+    letter-spacing: 1pt;
+    color: #2E86C1 ;
+    text-transform: uppercase;
+    text-decoration: none;
+    border: 2px solid #2E86C1 ;
+    border-radius: 8px;
+    background: none;
+    cursor: pointer;
+    text-align: center;
+}
+.button:hover{
+    background: #2E86C1 ;
+    color: white;
+}
+.area{
+    height: 60%;
+    width: 35%;
+    background:#292F33;
+}
+.name{
+    width: 100%;
+    height: 15%;
+    background:none ;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    word-wrap: break-all;
+    overflow: hidden;
+}
+.name p{
+    font-family: 'Righteous', cursive;
+    color: white;
+    text-transform: uppercase;
+    font-size: 1.5em;
+    text-align: center;
+    margin: 0;
+}
+.win{
+    width: 100%;
+    height: 10%;
+    background:rgba(0, 0, 0, .2);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.win p{
+    margin: 0 0 0 5px;
+    font: small-caps bold 1.1em sans-serif;
+    color: white;
+}
+.round{
+    width: 100%;
+    height: 75%;
+    background: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 5%;
+}
+@media (max-width:992px){
+    .result_game{
+        font: small-caps bold 8em sans-serif;
+    }
+    
+}
+@media (max-width:770px){
+    .result_game{
+        font: small-caps bold 7em sans-serif;
+    }
+    
+}
+@media (max-width:565px){
+    .result_game{
+        font: small-caps bold 5em sans-serif;
+    }
+}
+@media (max-width:430px){
+    .middle_block{
+        width: 70%;
+        order: 3;
+    }
+    .name p{
+        font-size: 1em;
+    }
+    .result_game{
+        font: small-caps bold 3em sans-serif;
+    }
+}

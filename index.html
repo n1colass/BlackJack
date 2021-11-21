@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Black Jack 2.0</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+        <div class="game_area">
+            <div class="area">
+                <div class="name"> <p class="name_player"></p></div>
+                <div class="win win_player"> <p class="count_player"></p> <p>point</p> </div>
+                <div class="round"> <img src="img/start.svg" alt="Player Cart" class="img_player"> </div>
+            </div>
+            <div class="middle_block">
+            <p class="count"></p>
+            <div class="button_container"><button class="button game_button">Play</button></div>
+            </div>
+            <div class="area">
+                <div class="name"> <p>opponent</p> </div>
+                <div class="win win_opponent"> <p class="count_opponent"></p> <p>point</p> </div>
+                <div class="round">  <img src="img/start.svg" alt="Opponent Cart" class="opponent_player"></div>
+            </div>
+        </div>
+    <div class="modal">
+        <div class="modal_content">
+          <p class="result_game"></p>
+          <div class="button_restart"><button class="button restart_button">Restart Game</button></div>
+        </div>
+      
+      </div>
+    <script src="js/script.js"></script>
+</body>
+</html>
